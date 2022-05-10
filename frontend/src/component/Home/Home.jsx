@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-// import { CgMouse } from "react-icons";
+import { CgMouse } from "react-icons";
 import "./Home.css";
 import Product from "./Product.jsx";
 

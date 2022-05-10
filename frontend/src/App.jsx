@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./component/layout/Header/Header.js";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import WebFont from "webfontloader";
 import React, { useEffect } from "react";
 import Footer from "./component/layout/Footer/Footer";
@@ -17,10 +17,11 @@ function App() {
 
   return (
     <Router>
+      {/* <Home /> */}
       <Header />
-
-      <Route exact path="/" component={Home} />
-
+      <Routes>
+        <Route exact path="/home" element={<Home />} />
+      </Routes>
       <Footer />
     </Router>
   );
