@@ -1,0 +1,14 @@
+{
+  "product": [
+    {
+      "name": "blue Tshirt",
+      "images": [
+        {
+          "url": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRUsy08xwU3xSyHl1WYtWxma2EYPnok8CaObNYeSxDFr5No_f-9dZMrbHvU0VFaEQLIZnL-rK3UQvZAjzp8WiVumL6kvV4qZyND80a8ruZFRsXSHSBtzZ5p&usqp=CAc"
+        }
+      ],
+      "price": "39000",
+      "_id": "abhishek"
+    }
+  ]
+}

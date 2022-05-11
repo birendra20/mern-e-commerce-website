@@ -1,8 +1,10 @@
-import React, { Fragment } from "react";
-import { CgMouse } from "react-icons";
+import React, { Fragment, useEffect } from "react";
+//import { CgMouse } from "react-icons";
 import "./Home.css";
 import Product from "./Product.jsx";
 import MetaData from "../layout/MetaData";
+import { clearErrors, getProduct } from "../../actions/productAction";
+import { useSelector, useDispatch } from "react-redux";
 
 const product = {
   name: "blue Tshirt",
@@ -16,6 +18,17 @@ const product = {
 };
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const { loading, error, products } = useSelector((state) => state.products);
+
+  useEffect(() => {
+    // if (error) {
+    //   alert.error(error);
+    //   dispatch(clearErrors());
+    // }
+    dispatch(getProduct());
+  }, [dispatch]); //, error, alert
+
   return (
     <Fragment>
       <MetaData title="ECOMMERCE" />
