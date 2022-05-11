@@ -16,7 +16,9 @@ const Product = ({ product }) => {
     <Link className="productCard" to={product._id}>
       <img src={product.images[0].url} alt={product.name} />
       <p>{product.name}</p>
-      <div>{/* <ReactStars {...options} /> <span>(256 reviews)</span> */}</div>
+      <div>
+        <ReactStars {...options} /> <span>(256 reviews)</span>
+      </div>
       <span>{product.price}</span>
     </Link>
   );
