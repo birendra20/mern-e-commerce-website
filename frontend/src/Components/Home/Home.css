@@ -1,9 +1,13 @@
 .banner {
-  background-image: url("../../images/cover.jfif");
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vmin;
+  height: 40vmin;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -12,17 +16,9 @@
   color: white;
 }
 
-h1 {
-  color: black;
-}
 .banner > h1 {
-  margin: 5vmax;
-
+  margin: 2vmax;
   font: 600 2.5vmax "Roboto";
-}
-
-.banner > p {
-  font: 300 1.4vmax "Lucida Sans";
 }
 
 .banner > a > button {
@@ -49,7 +45,7 @@ h1 {
   position: absolute;
   top: 0%;
   left: 0;
-  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  clip-path: polygon(100% 100%, 0 100%, 100% 100%);
   max-width: 100%;
 }
 
@@ -67,10 +63,11 @@ h1 {
 .container {
   display: flex;
   margin: 2vmax auto;
-  width: 80vw;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
+  background-color: rgb(206, 220, 215);
 }
 
 .productCard {

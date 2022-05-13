@@ -1,6 +1,6 @@
 import React from "react";
-import playStore from "../../../images/playstore.png";
-import appStore from "../../../images/Appstore.png";
+import playStore from "../../images/playstore.png";
+import appStore from "../../images/Appstore.png";
 import "./Footer.css";
 
 const Footer = () => {
@@ -14,18 +14,19 @@ const Footer = () => {
       </div>
 
       <div className="midFooter">
-        <h1>ECOMMERCE.</h1>
+        <h1>Shopclues</h1>
         <p>High Quality is our first priority</p>
 
-        <p>Copyrights 2021 &copy; Birendra Gupta</p>
+        <p>Copyrights 2022 &copy; Birendra Gupta</p>
       </div>
 
       <div className="rightFooter">
-        <h4>Follow Us</h4>
+        <h4>Contact Us</h4>
         <a href="https://www.linkedin.com/in/birendra-gupta-3731b2120/">
-          Linkedin
+          LinkedIn
         </a>
-        <a href="https://www.instagram.com/birendra_g/">Instagram</a>
+        <a href="https://twitter.com/birendra_20">Twitter</a>
+        <a href="https://github.com/prathamsm7/D-Mart">Github</a>
       </div>
     </footer>
   );
