@@ -35,6 +35,7 @@ function App() {
       <Routes>
         <Route exact path="/checkout" element={<Checkout />} />
       </Routes>
+
       <Footer />
     </>
   );

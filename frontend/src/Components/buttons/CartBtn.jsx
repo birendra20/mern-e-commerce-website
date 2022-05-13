@@ -5,9 +5,10 @@ import { useSelector } from "react-redux";
 const CartBtn = () => {
   // We get a state of addItems
   // Write the name of the file not the function
-  const state = useSelector((state) => state.addItem);
+  const state = useSelector((state) => state.handleCart);
   return (
     <>
+      {/* <h1>1</h1> */}
       <NavLink to="/cart" className="btn btn-outline-primary ms-2">
         <span className="fa fa-shopping-cart me-1"></span> Cart ({state.length})
       </NavLink>

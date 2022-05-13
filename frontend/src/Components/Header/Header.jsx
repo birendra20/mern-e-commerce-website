@@ -48,7 +48,7 @@ const Header = () => {
             </NavLink>
             <Login />
             <Signup />
-            {/* <CartBtn /> */}
+            <CartBtn />
           </div>
         </div>
       </nav>
